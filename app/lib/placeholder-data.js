@@ -1,5 +1,6 @@
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
 // https://nextjs.org/learn/dashboard-app/fetching-data
+const invoiceImage = "/invoices/coin.png";
 const users = [
   {
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
@@ -165,6 +166,44 @@ const invoices = [
   },
 ];
 
+const latestInvoices = [
+ {
+  id: 1,
+  name: "tacos",
+  image_url: invoiceImage,
+  email: "email@tacoworld.com",
+  amount: 50
+ },
+ {
+  id: 2,
+  name: "burgers",
+  image_url: invoiceImage,
+  email: "email@burgerworld.com",
+  amount: 60
+ },
+ {
+  id: 3,
+  name: "pizza",
+  image_url: invoiceImage,
+  email: "email@pizzaworld.com",
+  amount: 70
+ },
+ {
+  id: 4,
+  name: "ice cream",
+  image_url: invoiceImage,
+  email: "email@icecreamworld.com",
+  amount: 20
+ },
+ {
+  id: 5,
+  name: "eletric guitar",
+  image_url: invoiceImage,
+  email: "email@electricguitarcreamworld.com",
+  amount: 500
+ }
+];
+
 const revenue = [
   { month: 'Jan', revenue: 2000 },
   { month: 'Feb', revenue: 1800 },
@@ -183,6 +222,7 @@ const revenue = [
 module.exports = {
   users,
   customers,
+  latestInvoices,
   invoices,
   revenue,
 };
